@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Globetrot</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="username_hint"><b>Username</b></string>
+    <string name="password_hint"><b>Password</b></string>
+    <string name="forgot_password"><b>Forgot Password?</b></string>
+    <string name="login_btn_text">LOG IN</string>
+    <string name="login">LOGIN</string>
+    <string name="sign_in"><u>Sign In</u></string>
+    <string name="confirm_password"><b>Confirm Password</b></string>
+    <string name="name"><b>Name</b></string>
+    <string name="email_address"><b>Email Address</b></string>
+    <string name="contact_number"><b>Contact Number</b></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_destination"><b>Destination</b></string>
+    <string name="date_format">%s/%s/%s</string>
+    <string name="no_account_text">Don\'t have an account?</string>
+    <string name="sign_up"><u>Sign Up</u></string>
+    <string name="already_have_an_account">Already have an account?</string>
+</resources>
