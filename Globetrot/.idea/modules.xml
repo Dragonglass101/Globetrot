@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Globetrot.iml" filepath="$PROJECT_DIR$/.idea/modules/Globetrot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Globetrot.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Globetrot.app.iml" />
     </modules>
   </component>
 </project>

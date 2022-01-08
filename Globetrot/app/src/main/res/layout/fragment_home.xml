@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="@drawable/blue_gradient_bg">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        >
+        <ImageView
+            android:id="@+id/home_bg"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/travel_image"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/destination_input"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginVertical="40sp"
+            app:layout_constraintTop_toBottomOf="@id/home_bg"
+            app:layout_constraintBottom_toBottomOf="@id/date_inputs"
+            android:background="@drawable/input_bg"
+
+            android:hint="@string/select_destination"
+            app:boxBackgroundColor="@color/white"
+            app:boxCornerRadiusBottomEnd="10sp"
+            app:boxCornerRadiusBottomStart="10sp"
+            app:boxCornerRadiusTopEnd="10sp"
+            app:boxCornerRadiusTopStart="10sp"
+            app:boxStrokeColor="@color/black"
+            app:endIconTint="@color/black"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:startIconDrawable="@drawable/ic_destination">
+
+            <AutoCompleteTextView
+                android:id="@+id/item_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:text="Select"
+                android:textSize="20sp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:id="@+id/date_inputs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginVertical="40sp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/destination_input">
+
+            <EditText
+                android:id="@+id/arrival_date_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5sp"
+                android:layout_weight="1"
+                android:background="@drawable/input_bg"
+                android:drawableStart="@drawable/ic_date"
+
+                android:drawablePadding="10sp"
+                android:hint="Arrival"
+                android:paddingVertical="10sp"
+                android:paddingStart="10sp"
+                android:paddingEnd="10sp"
+                android:textSize="16sp"
+                android:inputType="datetime"
+
+
+                />
+
+            <EditText
+                android:id="@+id/departure_date_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5sp"
+                android:layout_weight="1"
+                android:background="@drawable/input_bg"
+                android:drawableStart="@drawable/ic_date"
+                android:drawablePadding="10sp"
+                android:hint="Departure"
+                android:paddingVertical="10sp"
+                android:paddingStart="10sp"
+
+                android:textSize="16sp"
+                android:inputType="date"
+
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/budget_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginVertical="40sp"
+            android:background="@drawable/input_bg"
+            android:drawableStart="@drawable/ic_money"
+            android:drawablePadding="10sp"
+            android:hint="Budget"
+            android:inputType="numberDecimal"
+            android:paddingVertical="5sp"
+            android:paddingStart="10sp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/date_inputs" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/appCompatButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="80sp"
+            android:layout_marginVertical="40sp"
+            android:background="@drawable/login_button_background"
+            android:text="Add Trip"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/budget_input" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
