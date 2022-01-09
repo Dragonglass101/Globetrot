@@ -51,9 +51,9 @@
                 android:id="@+id/item_options"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"
+                android:inputType="none"
+                android:text="Select"
                 android:textSize="20sp"
-                android:completionThreshold="1"
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
