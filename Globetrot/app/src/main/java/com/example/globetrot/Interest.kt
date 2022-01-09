@@ -26,14 +26,25 @@ class Interest : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_interest, container, false)
         val expandableListView: ExpandableListView = view.findViewById(R.id.interest_list)
-        for (i in 1..20) {
+        for (i in 1..3) {
             interestListArray.add("Interest $i")
             val interestSubListArray = ArrayList<String>()
-            for (j in 1..10) {
+            for (j in 1..5) {
                 interestSubListArray.add("SubInterest $j")
             }
             interestHashMap[interestListArray[i-1]] = interestSubListArray
         }
+//        val fileName = "interests.txt"
+//        val inputString = application.assets.open(fileName).bufferedReader().use { it.readText() }
+//        val AllInterestList: List<String> = inputString.split("\n")
+//        for (i in 1..AllInterestList.size){
+//            interestListArray.add(AllInterestList[i])
+//            val interestSubListArray = ArrayList<String>()
+//            for(j in 1..3){
+//                interestSubListArray.add("SubInterest")
+//            }
+//            interestHashMap[interestListArray[i-1]] = interestSubListArray
+//        }
         val adapter: InterestAdapter = InterestAdapter(interestListArray, interestHashMap)
         expandableListView.setAdapter(adapter)
         return view
